@@ -1,0 +1,111 @@
+====== [0][0] ======
+ResnetBlock(
+  (norm1): GroupNorm(16, 16, eps=1e-06, affine=True)
+  (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (norm2): GroupNorm(16, 16, eps=1e-06, affine=True)
+  (dropout): Dropout(p=0.0, inplace=False)
+  (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+)
+====== [0][0] ======
+AttnBlock(
+  (norm): GroupNorm(16, 16, eps=1e-06, affine=True)
+  (q): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1))
+  (k): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1))
+  (v): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1))
+  (proj_out): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1))
+)
+====== [0][1] ======
+ResnetBlock(
+  (norm1): GroupNorm(16, 16, eps=1e-06, affine=True)
+  (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (norm2): GroupNorm(16, 16, eps=1e-06, affine=True)
+  (dropout): Dropout(p=0.0, inplace=False)
+  (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+)
+====== [0][1] ======
+AttnBlock(
+  (norm): GroupNorm(16, 16, eps=1e-06, affine=True)
+  (q): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1))
+  (k): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1))
+  (v): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1))
+  (proj_out): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1))
+)
+====== [0][1] ======
+Downsample(
+  (conv): Conv2d(16, 16, kernel_size=(3, 3), stride=(2, 2))
+)
+====== [1][0] ======
+ResnetBlock(
+  (norm1): GroupNorm(16, 16, eps=1e-06, affine=True)
+  (conv1): Conv2d(16, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (norm2): GroupNorm(16, 32, eps=1e-06, affine=True)
+  (dropout): Dropout(p=0.0, inplace=False)
+  (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (nin_shortcut): Conv2d(16, 32, kernel_size=(1, 1), stride=(1, 1))
+)
+====== [1][1] ======
+ResnetBlock(
+  (norm1): GroupNorm(16, 32, eps=1e-06, affine=True)
+  (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (norm2): GroupNorm(16, 32, eps=1e-06, affine=True)
+  (dropout): Dropout(p=0.0, inplace=False)
+  (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+)
+====== [1][1] ======
+Downsample(
+  (conv): Conv2d(32, 32, kernel_size=(3, 3), stride=(2, 2))
+)
+====== [2][0] ======
+ResnetBlock(
+  (norm1): GroupNorm(16, 32, eps=1e-06, affine=True)
+  (conv1): Conv2d(32, 48, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (norm2): GroupNorm(16, 48, eps=1e-06, affine=True)
+  (dropout): Dropout(p=0.0, inplace=False)
+  (conv2): Conv2d(48, 48, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (nin_shortcut): Conv2d(32, 48, kernel_size=(1, 1), stride=(1, 1))
+)
+====== [2][0] ======
+AttnBlock(
+  (norm): GroupNorm(16, 48, eps=1e-06, affine=True)
+  (q): Conv2d(48, 48, kernel_size=(1, 1), stride=(1, 1))
+  (k): Conv2d(48, 48, kernel_size=(1, 1), stride=(1, 1))
+  (v): Conv2d(48, 48, kernel_size=(1, 1), stride=(1, 1))
+  (proj_out): Conv2d(48, 48, kernel_size=(1, 1), stride=(1, 1))
+)
+====== [2][1] ======
+ResnetBlock(
+  (norm1): GroupNorm(16, 48, eps=1e-06, affine=True)
+  (conv1): Conv2d(48, 48, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (norm2): GroupNorm(16, 48, eps=1e-06, affine=True)
+  (dropout): Dropout(p=0.0, inplace=False)
+  (conv2): Conv2d(48, 48, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+)
+====== [2][1] ======
+AttnBlock(
+  (norm): GroupNorm(16, 48, eps=1e-06, affine=True)
+  (q): Conv2d(48, 48, kernel_size=(1, 1), stride=(1, 1))
+  (k): Conv2d(48, 48, kernel_size=(1, 1), stride=(1, 1))
+  (v): Conv2d(48, 48, kernel_size=(1, 1), stride=(1, 1))
+  (proj_out): Conv2d(48, 48, kernel_size=(1, 1), stride=(1, 1))
+)
+====== [2][1] ======
+Downsample(
+  (conv): Conv2d(48, 48, kernel_size=(3, 3), stride=(2, 2))
+)
+====== [3][0] ======
+ResnetBlock(
+  (norm1): GroupNorm(16, 48, eps=1e-06, affine=True)
+  (conv1): Conv2d(48, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (norm2): GroupNorm(16, 64, eps=1e-06, affine=True)
+  (dropout): Dropout(p=0.0, inplace=False)
+  (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (nin_shortcut): Conv2d(48, 64, kernel_size=(1, 1), stride=(1, 1))
+)
+====== [3][1] ======
+ResnetBlock(
+  (norm1): GroupNorm(16, 64, eps=1e-06, affine=True)
+  (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (norm2): GroupNorm(16, 64, eps=1e-06, affine=True)
+  (dropout): Dropout(p=0.0, inplace=False)
+  (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+)
